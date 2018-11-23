@@ -121,7 +121,9 @@ class App extends Component {
                     <h2>Login With Spotify</h2>
                     <p>Login through Spotify in order to continue using <i>moodmusic</i>.</p>
                     <button className="btn btn-primary" onClick={() => {
-                      window.location.href = 'http://localhost:8888/login';
+                      window.location = window.location.href.includes('localhost') 
+                      ? 'http://localhost:8888/login' 
+                      : 'https://moodmusic-backend.herokuapp.com/login'
                     }}> Login </button>
                 </div>  
              </div> 
