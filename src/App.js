@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import logo from './Asset_1.svg';
+import juanPic from './juan_pic.jpg'
+import pamPic from './pamela_pic.jpg'
 import holder from './placeholder.png';
 import queryString from 'query-string';
 
@@ -114,7 +116,7 @@ class App extends Component {
                 <div className="col">
                   <h1>What is this?</h1>
                     <p>
-                    <i>moodmusic</i> is a web application created with ReactJs along with Bootstrap 4. <i>moodmusic</i> aims to curate tracks depending on the users mood and genre preference using the Spotify Web Playback SDK and Web API? 
+                    <i>moodmusic</i> is a web application created with ReactJs along with Bootstrap 4. <i>moodmusic</i> aims to curate tracks depending on the users mood and genre preference using the Spotify Web API
                     </p>
                 </div>
                 <div className="col" style={{width: "5rem", padding: "5px"}}>
@@ -132,12 +134,12 @@ class App extends Component {
                 <div className="container-fluid" style={{margin: "100px 0px 0px 0px", padding: "20px", 'background-color':"lightgray"}}>
                   <div className="row">
                     <div className="col">
-                      <img className="rounded-circle" alt="" src={holder} style={{width: "140px", height: "140px"}}/>
+                      <img className="rounded-circle" alt="" src={juanPic} style={{width: "140px", height: "140px"}}/>
                       <h2>Juan Carrera</h2>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor consequat lacus, quis tempor augue placerat eu. Morbi suscipit viverra ullamcorper. Quisque at finibus nunc. Proin eleifend, dui at rutrum porta, massa ante sollicitudin odio, nec commodo dui ipsum ut ante. Fusce turpis erat, condimentum in condimentum vulputate, sagittis sit amet orci. Praesent tempor lectus est, vel efficitur odio fringilla et. Pellentesque elementum non magna vitae tincidunt. 
+                            From Orange, CA currently a computer science student at California State University,/ Fullerton. Fields that I am interested in are Web Applications and Mobile Development. I like to enjoy free time going to music festivals and playing video games.
                         </p>
-                      <button className="btn btn-success" href="#">View Github</button>
+                      <button className="btn btn-success" href="https://github.com/jweird">View Github</button>
                     </div>
                     <div className="col">
                       <img className="rounded-circle" alt="" src={holder} style={{width: "140px", height: "140px"}}/>
@@ -145,15 +147,14 @@ class App extends Component {
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor consequat lacus, quis tempor augue placerat eu. Morbi suscipit viverra ullamcorper. Quisque at finibus nunc. Proin eleifend, dui at rutrum porta, massa ante sollicitudin odio, nec commodo dui ipsum ut ante. Fusce turpis erat, condimentum in condimentum vulputate, sagittis sit amet orci. Praesent tempor lectus est, vel efficitur odio fringilla et. Pellentesque elementum non magna vitae tincidunt. 
                         </p>
-                      <button className="btn btn-success" href="#">View Github</button>
+                      <button className="btn btn-success" href="https://github.com/gamarobert">View Github</button>
                     </div>
                     <div className="col">
-                      <img className="rounded-circle" alt="" src={holder} style={{width: "140px", height: "140px"}}/>
+                      <img className="rounded-circle" alt="" src={pamPic} style={{width: "140px", height: "140px"}}/>
                       <h2>Pamela Camacho</h2>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor consequat lacus, quis tempor augue placerat eu. Morbi suscipit viverra ullamcorper. Quisque at finibus nunc. Proin eleifend, dui at rutrum porta, massa ante sollicitudin odio, nec commodo dui ipsum ut ante. Fusce turpis erat, condimentum in condimentum vulputate, sagittis sit amet orci. Praesent tempor lectus est, vel efficitur odio fringilla et. Pellentesque elementum non magna vitae tincidunt. 
-                        </p>
-                      <button className="btn btn-success" href="#">View Github</button>
+                        From Glendale, CA. Currently a senior at California State University, Fullerton. Studying Computer Science to pursue either a career in Cyber Seurity or Software Engineering. Free time spent usually going to watch live music or any type of art entertainment.                        </p>
+                      <button className="btn btn-success" href="https://github.com/pcamacho3">View Github</button>
                     </div>
                   </div>
                 </div>
