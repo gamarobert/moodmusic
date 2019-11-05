@@ -1,29 +1,31 @@
 {
   "name": "moodmusic",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "bootstrap": "^4.1.3",
-    "query-string": "^6.2.0",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-particles-js": "^2.4.0",
-    "react-scripts": "2.1.1",
-    "react-spotify-player": "^1.0.4"
-  },
+  "version": "1.0.0",
+  "description": "moodmusic",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamarobert/moodmusic.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Robert Gama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gamarobert/moodmusic/issues"
+  },
+  "homepage": "https://github.com/gamarobert/moodmusic#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
+  }
 }
