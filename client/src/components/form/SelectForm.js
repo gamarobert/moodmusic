@@ -23,37 +23,37 @@ export class SelectForm extends Component {
   };
   render() {
     return (
-      <form className='form-grid text-center'>
-        <div className='grid-mood'>
-          <h2 className='form-label text-center'>Mood</h2>
+      <form className="form-grid text-center">
+        <div className="grid-mood">
+          <h2 className="form-label text-center">Mood</h2>
           <select
             value={this.state.mood}
-            id='moodSelect'
+            id="moodSelect"
             onChange={this.handleMoodChange}
           >
-            <option value='95'>Happy</option>
-            <option value='75'>Sad</option>
-            <option value='165'>Angry</option>
+            <option value="95">Happy</option>
+            <option value="75">Sad</option>
+            <option value="165">Angry</option>
           </select>
         </div>
 
-        <div className='grid-genre'>
-          <h2 className='form-label text-center'>Genre</h2>
+        <div className="grid-genre">
+          <h2 className="form-label text-center">Genre</h2>
           <select
             value={this.state.genre}
-            id='genreSelect'
+            id="genreSelect"
             onChange={this.handleGenreChange}
           >
-            <option value='rock'>Rock</option>
-            <option value='hip-hop'>Hip-Hop</option>
-            <option value='edm'>EDM</option>
-            <option value='country'>Country</option>
-            <option value='pop'>Pop</option>
+            <option value="rock">Rock</option>
+            <option value="hip-hop">Hip-Hop</option>
+            <option value="edm">EDM</option>
+            <option value="country">Country</option>
+            <option value="pop">Pop</option>
           </select>
         </div>
 
-        <div className='grid-submit-button m-auto'>
-          <button onClick={e => this.onSubmit(e)} className='btn btn-primary'>
+        <div className="grid-submit-button m-auto">
+          <button onClick={e => this.onSubmit(e)} className="btn btn-primary">
             Listen!
           </button>
         </div>
