@@ -21,7 +21,7 @@ const Home = () => {
           onClick={() => {
             window.location = window.location.href.includes('localhost')
               ? 'http://localhost:5000/api/login'
-              : 'https://moodmusic-backend.herokuapp.com/login';
+              : 'https://moodmusic-demo.herokuapp.com/api/login';
           }}
         >
           Login
