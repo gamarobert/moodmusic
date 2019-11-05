@@ -27,10 +27,10 @@ let dev = [
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <div className='flex-container text-center'>
+    <div className="footer">
+      <div className="flex-container text-center">
         {dev.map((dev, index) => (
-          <div className='flex-item'>
+          <div className="flex-item devs">
             <Dev
               key={index}
               id={index}
