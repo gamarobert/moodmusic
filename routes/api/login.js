@@ -12,6 +12,8 @@ dotenv.config();
 let redirect_uri =
   process.env.REDIRECT_URI || 'http://localhost:5000/api/callback';
 
+let client_id = process.env.SPOTIFY_CLIENT_ID;
+
 router.get('/login', (req, res) => {
   res.redirect(
     'https://accounts.spotify.com/authorize?' +
